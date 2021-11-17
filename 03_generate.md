@@ -1,18 +1,4 @@
-# Inside the Punk Art Machinery - How To Generate 10 000 Punks (and Punkettes), Algorithmically - Paint by Numbers
-
-
-The bad news - the formula for the original 10 000 algorithmically generated CryptoPunks by LavraLabs is a secret
-(and not included in the published open source code).
-
-The good news - the CryptoPunks remake on the Polkadot blockchain
-built with Substra(te) ("SubtraPunks") by Usetech
-includes the art and code to generate
-algorithmically punks (and punkettes) with a fresh look.
-
-
-Let's convert the original [`punk_generator.js`](https://github.com/usetech-llc/substrapunks/blob/master/scripts/punk_generator.js) art machinery.
-Let's start with all the parts of a punk:
-
+test punk
 
 ``` ruby
 PARTS = {
@@ -77,7 +63,7 @@ A punk is composed of eight parts, that is,
 - Ears
 - Beard
 - Hair
-- Accessoire
+- Accessoires
 
 The first five parts are always required
 and the last three optional.
@@ -181,7 +167,7 @@ punk.save( './punk-0000.png' )
 And here's the magic paint by number art machinery:
 
 ``` ruby
-require 'chunky_png'    ## helper library for png images
+require 'chunky_png'
 
 
 def generate_punk( codes )
